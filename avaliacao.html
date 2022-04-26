@@ -1,0 +1,56 @@
+<!DOCTYPE html> <!--é uma declaração para informar ao navegador qual é a versão do HTML utilizada no arquivo.-->
+<html lang="pt-BR"> <!--O atributo global lang ajuda a definir o idioma de um elemento: a língua em que elementos não-editáveis são escritos, 
+    ou a língua em que elementos editáveis devem ser escritos pelo usuário. -->
+
+
+
+<head> <!-- providencia informações gerais (metadados) sobre o documento, incluindo seu título e links para scripts e folhas de estilos. -->
+    <meta charset="UTF-8"> <!--serve para que os navegadores saibam como devem renderizar os textos incluídos em uma página específica.-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--serve para controlar as ações do browser e também especificam melhor as informações-->
+     <!--é usada com os pseudoelementos ::before e ::after para gerar conteúdo em um elemento. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--define qualquer informação de metadados que não podem ser definidos por outros elementos HTML.--> 
+    <!--é usada com os pseudoelementos ::before e ::after para gerar conteúdo em um elemento.-->
+    <title>Avaliação</title> <!--define o título do documento-->
+    <link rel="stylesheet" href="avaliacao.css"> <!-- usado para vincular as folhas de estilo.--> 
+    <!--odemos redirecionar o usuário a outro documento --> <!---->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> 
+</head> <!--providencia informações gerais (metadados) sobre o documento-->
+
+<body> <!-- representa o conteúdo de um documento HTML-->
+
+    <main> <!--define o conteúdo principal dentro do <body> s -->
+        <div id="moviePoster"> <!--é um container genérico para conteúdo de fluxo, que de certa forma não representa nada.-->
+            <div class="omdbrating">
+                <span id="icone"><i class="fa-solid fa-star"></i></span> 
+                <!-- é um conteiner generico em linha para conteúdo fraseado , que não representa nada por natureza. -->
+
+                <span id="imdbRating">Score</span>
+            </div>
+        </div>
+
+        <div class="description">
+
+            <form id="formSearch" action=""> <!--ubmete os dados de entrada do usuário a um programa que se encarregará do processamento desses dados-->
+                <input id="title" type="text" placeholder="Informe o título do filme"> 
+                <!-- é usado para criar controles interativos para formulários baseados na web para receber dados do usuário.-->
+                <input type="submit" value="Pesquisar">
+            </form>
+            <div id="descriptionBodyNotFound">
+            </div>
+            <div id="descriptionBody">
+                <h1 id="movieTitle">Titulo do filme</h1>
+                <p><span class="infoBlue" id="movieYear">ANO</span> <span id="movieGenre">GENERO DO FILME</span> <span
+                        class="infoBlue" id="movieRuntime">DURAÇÃO</span></p>
+                <p id="movieInfo">Descrição do filme.</p>
+                <p><strong id = "remover1" >Escrito por:</strong> <span id="movieWriter">Nome do escritor</span> </p>
+                <p><strong id = "remover2">Dirigido por:</strong> <span id="movieDirector">Nome do ditetor</span></p>
+            </div>
+
+            
+        </div>
+    </main>
+
+    <script src="avaliacao.js"></script>
+</body>
+
+</html>
